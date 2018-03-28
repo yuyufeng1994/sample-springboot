@@ -20,7 +20,8 @@
         <module>sample-springboot-provider</module>
         <module>sample-springboot-web</module>
         <module>sample-springboot-cloud</module>
-        <module>sample-springboot-consumer</module>
+        <module>sample-springboot-consumer-ribbon</module>
+        <module>sample-springboot-consumer-feign</module>
     </modules>
 
     <properties>
