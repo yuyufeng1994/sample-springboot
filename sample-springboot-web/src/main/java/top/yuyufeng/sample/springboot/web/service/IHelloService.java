@@ -1,0 +1,13 @@
+package top.yuyufeng.sample.springboot.web.service;
+
+/**
+ * @author yuyufeng
+ * @date 2018/3/28
+ */
+public interface IHelloService {
+    /**
+     * print something
+     * @return
+     */
+    String sayHello();
+}

@@ -1,0 +1,12 @@
+server:
+  port: 8080
+name:
+  yuyufeng
+
+#日志打印
+logging:
+  level:
+    org.springfromework.web: debug
+
+
+
