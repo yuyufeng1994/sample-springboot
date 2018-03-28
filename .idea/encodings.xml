@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springboot-consumer-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springboot-consumer-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springboot-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springboot-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springcloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springcloud/sample-springcloud-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sample-springcloud/sample-springcloud-eureka" charset="UTF-8" />
+  </component>
+</project>

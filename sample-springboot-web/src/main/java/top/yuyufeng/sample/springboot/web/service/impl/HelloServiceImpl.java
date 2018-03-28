@@ -15,6 +15,6 @@ public class HelloServiceImpl implements IHelloService{
 
     @Override
     public String sayHello() {
-        return "hello 你好 123456" + this.name;
+        return "hello 你好 " + this.name;
     }
 }
