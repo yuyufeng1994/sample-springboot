@@ -1,0 +1,18 @@
+server:
+  port: 8080
+#日志打印
+logging:
+  level:
+    org.springfromework.web: debug
+
+spring:
+  application:
+    name: my-web
+  cloud:
+    config:  # git管理配置
+      uri: http://127.0.0.1:6018
+      label: master
+      profile: test
+
+
+

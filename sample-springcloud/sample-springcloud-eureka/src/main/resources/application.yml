@@ -1,5 +1,10 @@
+spring:
+  application:
+    name: my-eureka
+
 server:
   port: 21888
+
 eureka:
   client:
     registerWithEureka: false #表示是否将自己注册到Eureka Server，默认为true

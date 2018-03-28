@@ -2,6 +2,7 @@ package top.yuyufeng.sample.springboot.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
@@ -11,6 +12,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients
+@EnableCircuitBreaker
 public class ApplicationConsumerFeign {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationConsumerFeign.class, args);

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>top.yuyufeng</groupId>
-    <artifactId>sample.springboot</artifactId>
+    <artifactId>sample-springboot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -19,7 +19,7 @@
     <modules>
         <module>sample-springboot-provider</module>
         <module>sample-springboot-web</module>
-        <module>sample-springboot-cloud</module>
+        <module>sample-springcloud</module>
         <module>sample-springboot-consumer-ribbon</module>
         <module>sample-springboot-consumer-feign</module>
     </modules>
@@ -48,6 +48,15 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>1.5.2.RELEASE</version>
             </dependency>
+
+            <!--hystrix熔断器报错解决，找不到class-->
+            <dependency>
+                <groupId>com.netflix.hystrix</groupId>
+                <artifactId>hystrix-javanica</artifactId>
+                <version>1.5.12</version>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>

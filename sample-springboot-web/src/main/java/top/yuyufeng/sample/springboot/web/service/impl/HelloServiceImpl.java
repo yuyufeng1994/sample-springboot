@@ -10,7 +10,7 @@ import top.yuyufeng.sample.springboot.web.service.IHelloService;
  */
 @Service
 public class HelloServiceImpl implements IHelloService{
-    @Value("${name:world}")
+    @Value("${my-name}")
     private String name;
 
     @Override

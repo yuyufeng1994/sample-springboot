@@ -17,7 +17,7 @@ public class HelloServiceImpl implements IHelloService {
 
     @Override
     public String sayHello(String words) {
-        logger.info("你说：" + words);
-        return "你说：" + words;
+        logger.info("Provider说：" + words);
+        return "Provider说：" + words;
     }
 }
