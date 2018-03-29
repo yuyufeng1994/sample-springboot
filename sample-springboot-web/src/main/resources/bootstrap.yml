@@ -14,5 +14,9 @@ spring:
       label: master
       profile: test
 
+management:
+  security:
+    enabled: false #在 application.properties 添加以下配置.关闭安全认证 值是false的话，除开health接口还依赖endpoints.health.sensitive的配置外，其他接口都不需要输入用户名和密码了
+
 
 
