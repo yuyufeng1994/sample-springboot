@@ -13,11 +13,14 @@ import top.yuyufeng.sample.springboot.provider.service.IHelloService;
 @Service
 public class HelloServiceImpl implements IHelloService {
 
+    @Value("${server.port}")
+    private Integer serverPort;
+
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
     public String sayHello(String words) {
         logger.info("Provider说：" + words);
-        return "Provider说：" + words;
+        return "Provider["+serverPort+"]说：" + words;
     }
 }

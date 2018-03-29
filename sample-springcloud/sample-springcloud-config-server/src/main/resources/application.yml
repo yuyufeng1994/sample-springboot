@@ -1,3 +1,5 @@
+server:
+  port: 6018
 spring:
   application:
     name: my-config
@@ -10,9 +12,13 @@ spring:
           label: master
           #username:
           #password:
+##注册中心
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://111.231.83.73:21888/eureka/
 
-server:
-  port: 6018
+
 
 
 # Spring Cloud Config也提供本地存储配置的方式。我们只需要设置属性

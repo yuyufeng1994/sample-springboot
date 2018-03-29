@@ -1,22 +1,19 @@
 server:
   port: 8080
-#日志打印
-logging:
-  level:
-    org.springfromework.web: debug
 
 spring:
   application:
     name: my-web
   cloud:
     config:  # git管理配置
-      uri: http://127.0.0.1:6018
+      uri: http://111.231.83.73:6018
       label: master
-      profile: test
+      profile: dev
+#      discovery:
+#        enabled: true #是从配置中心读取文件。
+#        service-id: my-config #配置中心的servieId，即服务名。
 
-management:
-  security:
-    enabled: false #在 application.properties 添加以下配置.关闭安全认证 值是false的话，除开health接口还依赖endpoints.health.sensitive的配置外，其他接口都不需要输入用户名和密码了
+
 
 
 
