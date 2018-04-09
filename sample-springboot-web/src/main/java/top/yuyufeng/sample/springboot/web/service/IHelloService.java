@@ -6,8 +6,9 @@ package top.yuyufeng.sample.springboot.web.service;
  */
 public interface IHelloService {
     /**
-     * print something
+     * 输出hello
+     * @param words
      * @return
      */
-    String sayHello();
+    String sayHello(String words);
 }

@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import top.yuyufeng.sample.springboot.web.service.IHelloService;
 
@@ -15,23 +16,16 @@ import java.util.Date;
  */
 @RestController
 public class IndexController {
-    @Autowired
-    private IHelloService helloService;
 
-
-    @RequestMapping("/")
+    @RequestMapping(value = "/",method = RequestMethod.GET)
     String home() {
         return "Hello World!";
     }
 
-    @RequestMapping("/now")
+    @RequestMapping(value = "/now",method = RequestMethod.GET)
     String now() {
         return new Date().toLocaleString();
     }
 
-    @RequestMapping("/hello")
-    String hello() {
-        String result = helloService.sayHello();
-        return result;
-    }
+
 }

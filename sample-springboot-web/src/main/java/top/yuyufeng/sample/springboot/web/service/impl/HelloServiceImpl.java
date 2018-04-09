@@ -11,12 +11,12 @@ import top.yuyufeng.sample.springboot.web.service.IHelloService;
  */
 @Service
 @RefreshScope
-public class HelloServiceImpl implements IHelloService{
+public class HelloServiceImpl implements IHelloService {
     @Value("${my-name}")
     private String name;
 
     @Override
-    public String sayHello() {
-        return "hello 你好 " + this.name;
+    public String sayHello(String words) {
+        return "hello 你好 " + this.name + " " + words;
     }
 }

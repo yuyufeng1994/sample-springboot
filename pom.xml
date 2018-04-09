@@ -22,6 +22,8 @@
         <module>sample-springcloud</module>
         <module>sample-springboot-consumer-ribbon</module>
         <module>sample-springboot-consumer-feign</module>
+        <module>sample-springboot-persistence</module>
+        <module>sample-springbooot-task</module>
     </modules>
 
     <properties>
@@ -31,6 +33,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
 
     <!--dependencyManagement提供了一个统一的<version>声明的途径，用以保证所有module的依赖版本一致性。当parent与module中声明的版本号发生冲突时，优先依赖parent中<dependencyManagement>声明的版本号。<dependencyManagement>不真正引入依赖。-->
     <dependencyManagement>
@@ -54,6 +65,33 @@
                 <groupId>com.netflix.hystrix</groupId>
                 <artifactId>hystrix-javanica</artifactId>
                 <version>1.5.12</version>
+            </dependency>
+
+            <!--mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+
+            <!--mapper-->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>1.1.4</version>
+            </dependency>
+
+            <!--pagehelper-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.6</version>
             </dependency>
 
 
